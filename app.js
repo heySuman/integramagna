@@ -73,18 +73,41 @@ gsap.from(".about-section .about__description", {
 
 gsap.from(".circle-hero", {
   rotate: 360,
-  duration: 0.5,
+  duration: 15,
   scrollTrigger: {
-    trigger: ".circe-hero",
+    trigger: ".circle-hero",
     scrub: 1,
-    end: "bottom bottom",
   },
 });
 
 gsap.from(".circle-about", {
   rotate: 360,
+  duration: 15,
   scrollTrigger: {
-    trigger: ".circe-about",
+    trigger: ".circle-about",
     scrub: true,
   },
 });
+
+// hide logo and contact from navbar
+
+let scrollPosition = window.scrollY;
+
+function hideLogo() {
+  const logo = document.querySelector(".nav-col-1 .logo__wrapper");
+  const contact = document.querySelector(".nav-col-3 p");
+
+  const currentPosition = window.scrollY;
+
+  if (currentPosition > scrollPosition) {
+    logo.classList.add("hide-logo");
+    contact.classList.add("hide-contact");
+  } else {
+    logo.classList.remove("hide-logo");
+    contact.classList.remove("hide-contact");
+  }
+
+  scrollPosition = currentPosition;
+}
+
+window.addEventListener("scroll", hideLogo);
