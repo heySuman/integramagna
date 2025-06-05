@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+    font-family: "ideamet";
+    src: url(https://www.integramagna.com/assets/fonts/ideamet.woff);
+}
+
+:root {
+  --fs-164: clamp(2.5rem, 7.75vi + 0.95rem, 10.25rem);
+  --fs-64: clamp(1.88rem, 2.13vi + 1.45rem, 4rem);
+  --fs-36: clamp(1.25rem, 1vi + 1.05rem, 2.25rem);
+}
+
+body,
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "ideamet", sans-serif;
+  font-size: 16px;
+}
+
+.section {
+  padding: 200px 115px;
+  position: relative;
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+
+  .span-we {
+    position: absolute;
+    left: 10vw;
+    overflow: hidden;
+
+    span {
+      font-size: var(--fs-164);
+      font-weight: 500;
+    }
+  }
+
+  .span-are {
+    position: absolute;
+    right: 20vw;
+    top: 25vw;
+    overflow: hidden;
+    span {
+      font-size: var(--fs-164);
+      font-weight: 500;
+    }
+  }
+
+  .span-gritty {
+    position: absolute;
+    left: 10vw;
+    bottom: 200px;
+    overflow: hidden;
+
+    span {
+      font-size: var(--fs-164);
+      font-weight: 500;
+    }
+  }
+}
+.image-container{
+    position: relative;
+}
+.circle-hero {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  bottom: -5vw;
+  right: -5vw;
+}
+
+/* Text Reveal */
+
+@keyframes reveal {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.about-section {
+  p {
+    font-size: var(--fs-64);
+    font-weight: 500;
+  }
+}
+
+.svg-text {
+  padding-bottom: 200px;
+
+  svg {
+    text {
+      font-size: 3rem;
+    }
+  }
+}
+
+/* About Second section */
+
+.about-second-section {
+  padding-top: 200px;
+  display: flex;
+
+  .about-second-section__left {
+    width: 40%;
+    h2 {
+      font-size: var(--fs-36);
+      font-weight: 500;
+    }
+  }
+
+  .about-second-section__right {
+    width: 60%;
+
+    h2 {
+      font-size: var(--fs-64);
+      font-weight: 500;
+    }
+
+    p {
+      font-size: var(--fs-36);
+      font-weight: 500;
+      color: grey;
+    }
+  }
+}
+
+#star {
+  animation: phase-in-out 2s ease-in-out infinite;
+}
+
+@keyframes phase-in-out {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
