@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/test.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/test.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="landing-page">Landing Page</div>
+    <div>
+      <div class="grid-container" id="container">
+        <div class="column-1">
+          <div class="grid-1__wrapper">
+            <img
+              src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-2.webp"
+              alt="Designer sketching characters"
+            />
+            <img
+              src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-1.webp"
+              alt="Standing Designer working on a laptop"
+            />
+          </div>
+        </div>
+
+        <div class="column-2">
+          <div class="grid-2__wrapper">
+            <img
+              src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-5.webp"
+              alt="Ideation sketches of a Logo Design on a table"
+            />
+
+            <div class="video__container" width="1600" height="1080">
+              <video
+                playsinline=""
+                loop=""
+                muted=""
+                autoplay=""
+                preload="metadata"
+                aria-label="video-player"
+                poster="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/about-us-team-work-video.png"
+                alt="Tabletop video of designers working together"
+                title="Tabletop video of designers working together"
+              >
+                <source
+                  src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/about-us-team-work-video.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <img
+              src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-1.webp"
+              class="About_gridObjects__I4hPA"
+              alt="BTS of a product photoshoot"
+            />
+          </div>
+        </div>
+
+        <div class="column-3">
+          <div class="grid-3__wrapper">
+            <img
+              src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-4.webp"
+              class="About_gridObjects__I4hPA"
+              alt="Designer reading Start with why the book"
+            /><img
+              src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-6.webp"
+              class="About_gridObjects__I4hPA"
+              alt="Designer working on a laptop with a view"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./css/test.js"></script>
+  </body>
 </html>

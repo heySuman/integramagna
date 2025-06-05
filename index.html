@@ -9,6 +9,9 @@
       href="https://www.integramagna.com/favicon.ico"
       type="image/x-icon"
     />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <title>About Us | Integra Magna | Design Agency</title>
   </head>
@@ -26,7 +29,7 @@
         </div>
 
         <div class="span-we">
-          <span> We </span>
+          <span id="we" class="we"> We </span>
         </div>
 
         <div class="span-are">
@@ -38,9 +41,73 @@
         </div>
       </div>
 
+      <div>
+        <div class="grid-container" id="container">
+          <div class="column-1">
+            <div class="grid-1__wrapper">
+              <img
+                src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-2.webp"
+                alt="Designer sketching characters"
+              />
+              <img
+                src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-1.webp"
+                alt="Standing Designer working on a laptop"
+              />
+            </div>
+          </div>
+
+          <div class="column-2">
+            <div class="grid-2__wrapper">
+              <img
+                src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-5.webp"
+                alt="Ideation sketches of a Logo Design on a table"
+              />
+
+              <div class="video__container" width="1600" height="1080">
+                <video
+                  playsinline=""
+                  loop=""
+                  muted=""
+                  autoplay=""
+                  preload="metadata"
+                  aria-label="video-player"
+                  poster="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/about-us-team-work-video.png"
+                  alt="Tabletop video of designers working together"
+                  title="Tabletop video of designers working together"
+                >
+                  <source
+                    src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/about-us-team-work-video.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+              <img
+                src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-1.webp"
+                class="About_gridObjects__I4hPA"
+                alt="BTS of a product photoshoot"
+              />
+            </div>
+          </div>
+
+          <div class="column-3">
+            <div class="grid-3__wrapper">
+              <img
+                src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-4.webp"
+                class="About_gridObjects__I4hPA"
+                alt="Designer reading Start with why the book"
+              /><img
+                src="https://www.integramagna.com/assets/images/about/zoomImage/video-grid/image-grid-6.webp"
+                class="About_gridObjects__I4hPA"
+                alt="Designer working on a laptop with a view"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- About -->
       <div class="about-section section">
-        <p>
+        <p class="about__description">
           We are a global strategic design agency that thrives on building
           brands with powerful conviction. Collaborating with entrepreneurs,
           founders, and creators to capitalize their significant business
@@ -71,6 +138,7 @@
                 </g>
               </svg>
               <svg
+                class="circle-about"
                 version="1.1"
                 x="0px"
                 y="0px"
@@ -221,5 +289,6 @@
         </div>
       </div>
     </main>
+    <script src="./app.js"></script>
   </body>
 </html>

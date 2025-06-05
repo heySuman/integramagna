@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @font-face {
-    font-family: "ideamet";
-    src: url(https://www.integramagna.com/assets/fonts/ideamet.woff);
+  font-family: "ideamet";
+  src: url(https://www.integramagna.com/assets/fonts/ideamet.woff);
 }
 
 :root {
@@ -40,6 +40,7 @@ html,
     span {
       font-size: var(--fs-164);
       font-weight: 500;
+      display: inline-block;
     }
   }
 
@@ -51,6 +52,7 @@ html,
     span {
       font-size: var(--fs-164);
       font-weight: 500;
+      display: inline-block;
     }
   }
 
@@ -63,11 +65,12 @@ html,
     span {
       font-size: var(--fs-164);
       font-weight: 500;
+      display: inline-block;
     }
   }
 }
-.image-container{
-    position: relative;
+.image-container {
+  position: relative;
 }
 .circle-hero {
   position: absolute;
@@ -92,6 +95,7 @@ html,
   p {
     font-size: var(--fs-64);
     font-weight: 500;
+    display: inline-block;
   }
 }
 
@@ -148,5 +152,82 @@ html,
   }
   to {
     transform: scale(1);
+  }
+}
+
+.grid-container {
+  background: #000;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  overflow: hidden;
+  gap: 50px;
+
+  .column-1,
+  .column-2,
+  .column-3 {
+    display: grid;
+    max-width: 1fr;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .video__container {
+      width: 100%;
+
+      video {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+/* Grid Column */
+
+.grid-1__wrapper {
+  position: absolute;
+  transform: translateY(-50%);
+
+  display: grid;
+  gap: 20px;
+
+  transition: all 0.3s ease;
+
+  img {
+    filter: grayscale(100%);
+  }
+}
+
+.grid-2__wrapper {
+  position: absolute;
+  transform: translateY(-100%);
+
+  display: grid;
+  gap: 20px;
+
+  transition: all 0.3s ease-out;
+
+  img {
+    filter: grayscale(100%);
+  }
+}
+
+.grid-3__wrapper {
+  position: absolute;
+  transform: translateY(-50%);
+
+  display: grid;
+  gap: 20px;
+
+  transition: all 0.3s ease;
+
+  img {
+    filter: grayscale(100%);
   }
 }
