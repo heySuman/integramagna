@@ -61,11 +61,11 @@ gsap.from(".span-gritty span", {
 
 // About section animation paragraph
 
-gsap.from(".about-section .about__description", {
+gsap.from(".about__description", {
   y: 100,
   duration: 0.5,
   scrollTrigger: {
-    trigger: ".about-section .about__description",
+    trigger: ".about__description",
   },
 });
 
@@ -111,3 +111,20 @@ function hideLogo() {
 }
 
 window.addEventListener("scroll", hideLogo);
+
+
+// Horizontal Scrolling
+
+let sections = gsap.utils.toArray(".panel");
+
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".container-horizontal",
+    pin: true,
+    scrub: 1,
+    end: () => "+=" + document.querySelector(".container-horizontal").offsetWidth
+  }
+});
+
