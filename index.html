@@ -56,7 +56,7 @@
       </nav>
     </header>
     <main>
-      <div class="section hero-section">
+      <div class="section hero-section" id="hero-section">
         <div class="image-container">
           <img src="./assets/about-hero-image.webp" alt="" />
           <!-- circle -->
@@ -375,9 +375,90 @@
         </p>
         </div>
 
-        <div id="footer_container"><div class="footer"><form id="my_form"><p class="footer_p">Hey, I’m<span><input type="text" placeholder="your name" id="name_user" autocomplete="off" class="name_box" name="name" value=""></span>Let's grab a virtual coffee and chat things out. Reach me back at<span><input type="email" placeholder="your email address" id="gmail_user" required="" autocomplete="off" class="gmail_box" name="email" value=""></span>Here’s what I’m thinking:<span><textarea placeholder="Spill the ink of your mind right here..." id="text_user" name="text" rows="3" class="text_area"></textarea></span></p><div class="footer_bt"><div class="social_media_icon"><p><span><a href="https://www.instagram.com/integra.magna/" target="_blank" rel="noopener noreferrer">Ig</a></span><span><a href="https://www.linkedin.com/company/integramagna/" target="_blank" rel="noopener noreferrer">In</a></span><span><a href="https://twitter.com/Integra_Magna/" target="_blank" rel="noopener noreferrer">X</a></span><span><a href="https://www.behance.net/integra_magna/" target="_blank" rel="noopener noreferrer">Be</a></span></p></div><button type="submit" id="btn_submit">Submit</button></div></form></div></div>
+        <div id="footer_container">
+          <div class="footer">
+            <form id="my_form">
+              <p class="footer_p">
+                Hey, I’m<span><input type="text" placeholder="your name" id="name_user" autocomplete="off" class="name_box" name="name" value=""></span>Let's grab a virtual coffee and chat things out. Reach me back at<span><input type="email" placeholder="your email address" id="gmail_user" required="" autocomplete="off" class="gmail_box" name="email" value=""></span>Here’s what I’m thinking:
+                <span>
+                  <textarea placeholder="Spill the ink of your mind right here..." id="text_user" name="text" rows="3" class="text_area">
+                </textarea>
+              </span>
+            </p>
+            <div class="footer_bt">
+              <div class="social_media_icon">
+                <p>
+                  <span>
+                    <a href="https://www.instagram.com/integra.magna/" target="_blank" rel="noopener noreferrer">Ig</a></span>
+                    <span>
+                      <a href="https://www.linkedin.com/company/integramagna/" target="_blank" rel="noopener noreferrer">In</a></span><span>
+                        <a href="https://twitter.com/Integra_Magna/" target="_blank" rel="noopener noreferrer">X</a></span><span><a href="https://www.behance.net/integra_magna/" target="_blank" rel="noopener noreferrer">Be</a></span></p>
+                      </div>
+                      <button type="submit" id="btn_submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
        </div>
       </main>
+
+      <footer>
+        <div class="footerContent">
+          <section class="footer-text-section" id="header-hide">
+            <div class="footer_container">
+              <div class="integra_magna_img">
+                <img 
+                alt="Integra Magna Typography" 
+                class="footer_image_text_laptop" 
+                src="https://www.integramagna.com/assets/images/footer/footer-bg-text-desktop.svg">
+
+                <img 
+                alt="Integra Magna Typography" 
+                class="footer_image_text_mobile" 
+                src="https://www.integramagna.com/assets/images/footer/footer-bg-text-mobile.svg">
+              </div>
+                <ul class="links_footer">
+                  <li data-links="Work">
+                      Work
+                  </li>
+                  <li data-links="Services">
+                    Services
+                  </li>
+                  <li data-links="Thinking">
+                      Thinking
+                    </li>
+                    <li data-links="Career">
+                      Career
+                    </li>
+                    <li data-links="About">
+                      About
+                    </li>
+                    <li data-links="Contact">
+                      Contact
+                    </li>
+                  </ul>
+                  <div class="copyright">
+                    <div class="privacypolicy" data-links="Privacy Policy">
+                      <p>Privacy Policy</p>
+                  </div>
+                  <p>Copyright © 2025 Integra Magna</p>
+                </div>
+                <div class="image_changing_footer">
+                    <img alt="Integra Magna Team Building" class="image-flick" src="https://www.integramagna.com/assets/images/footer/team.webp">
+                  </div>
+
+                  <a href="#hero-section" style="scroll-behavior: smooth;">
+                    <button class="top-btn">
+                      <div class="top-arrow">
+                        <img alt="Scroll to top Arrow" src="https://www.integramagna.com/assets/images/footer/top-arrow.svg">
+                      </div>
+                      <span>Back to top</span>
+                    </button>
+                  </a>
+                  </div>
+                </section>
+        </div>
+      </footer>
     <script src="./app.js"></script>
   </body>
 </html>
