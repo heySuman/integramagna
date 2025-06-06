@@ -112,7 +112,6 @@ function hideLogo() {
 
 window.addEventListener("scroll", hideLogo);
 
-
 // Horizontal Scrolling
 
 let sections = gsap.utils.toArray(".panel");
@@ -124,7 +123,13 @@ gsap.to(sections, {
     trigger: ".container-horizontal",
     pin: true,
     scrub: 1,
-    end: () => "+=" + document.querySelector(".container-horizontal").offsetWidth
-  }
+    end: () =>
+      "+=" + document.querySelector(".container-horizontal").offsetWidth,
+  },
 });
 
+// Loading screen
+
+window.addEventListener("load", () => {
+  document.querySelector(".slider").classList.add("slide-up");
+});
